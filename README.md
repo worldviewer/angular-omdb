@@ -1,13 +1,7 @@
-#Angular Basic Tutorial
+#Angular Basic Template
 
-Branches
+Use this template to get started with angular projects it includes:
 
-1. Simple app w/ bootstrap
-  * $scope, two-way data binding
-2. Two Routes, One Controller, Two Templates
-  * angular-router, $location
-3. One Service with Mock Data
-  * ng-repeat, ng-show, ng-click
-  * emit, broadcast
-4. Update Service to consume External API, ng-show/ng-hide/ng-switch
-  * $filter (search bar)
+* AngularJS @1.3.15
+* Bootstrap @3.3.4
+* Ionicons @2.0.1
