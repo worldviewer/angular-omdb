@@ -1,13 +1,15 @@
 <!doctype html>
-<html ng-app="angularBasic">
+<html>
   <head>
     <title>My Angular App</title>    
     <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <input ng-model="foo" class='form-control'/>
-    <br>
-    {{foo}}
+  <body ng-app="starter">
+    <div class="container">
+      <input ng-model="foo.bar" class='form-control'/>
+      <br>
+      {{foo.bar}}
+    </div>
   </body>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>

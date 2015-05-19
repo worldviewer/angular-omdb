@@ -1,1 +1,1 @@
-angular.module('angularBasic', []);
+angular.module('starter', []);
