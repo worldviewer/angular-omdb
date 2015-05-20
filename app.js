@@ -5,7 +5,7 @@ angular.module('starter', [])
     $scope.current_user = { points_count: 3 };
 
     $rootScope.$on('addPoint', function() {
-      $scope.current_user.points_count = ++$scope.current_user.points_count
+      $scope.current_user.points_count = $scope.current_user.points_count += 2;
     })
   }])
 
@@ -16,7 +16,11 @@ angular.module('starter', [])
     // $scope.movies = Movie.all();
 
     $scope.addPoint = function() {
-      $rootScope.$broadcast('addPoint')
+      $rootScope.$broadcast('addPoint');
+    }
+
+    $scope.changeColor = function() {
+      $rootScope.navBarStyle = "{'background-color':'red'}";
     }
 
     $scope.searchMovies = function() {

@@ -27,7 +27,9 @@
 
         <i class="icon ion-home"></i>
         
-        <div ng-show="noMovies"><h1>No movies found with that search!</h1></div>
+        <div ng-show="noMovies"><h1><span ng-style="navBarStyle">No movies found with that search!</span></h1></div>
+
+        {{navBarStyle}}
 
         <div ng-repeat="movie in movies">
 
@@ -40,6 +42,11 @@
       <p class='text-right'>
         <button class='btn btn-default' ng-click="addPoint()">Add Point</button>
       </p>
+
+      <p class='text-right'>
+        <button class='btn btn-default' ng-click="changeColor()">Change Color</button>
+      </p>
+
     </div>
 
 
