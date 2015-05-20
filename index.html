@@ -20,13 +20,22 @@
 
     <div class="container" ng-controller="MyFirstCtrl">
 
-      <div class='form-group'>
-        <label>Home</label>
-        <input ng-model="foo.bar" class='form-control' autofocus/>
-      </div>
-      <p>
-        <i class="icon ion-home"></i> {{foo.bar}} 
-      </p>
+        <form ng-submit="searchMovies()">
+          <input ng-model='search' autofocus/>
+          <button type="submit">Submit</button>
+        </form>
+
+        <i class="icon ion-home"></i>
+        
+        <div ng-show="noMovies"><h1>No movies found with that search!</h1></div>
+
+        <div ng-repeat="movie in movies">
+
+        <h1>{{movie.Title}}</h1>
+        <!-- <img src="{{movie.poster_url}}"> -->
+        <br>
+
+        </div>
 
       <p class='text-right'>
         <button class='btn btn-default' ng-click="addPoint()">Add Point</button>
